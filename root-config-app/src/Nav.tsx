@@ -9,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { navigateToUrl } from "single-spa";
-import SearchPage from './SearchPage';
 
 
 const drawerWidth = 240;
@@ -69,7 +68,6 @@ export default function Nav() {
                     paper: classes.drawerPaper,
                 }}
             >
-            <SearchPage />
                 <Toolbar />
                 <div className={classes.drawerContainer}>
                     <List>
