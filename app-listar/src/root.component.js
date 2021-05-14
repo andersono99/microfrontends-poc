@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 
+
+
 export default function Root(props) {
   //return <section>{props.name} is mounted!</section>;
   const [data, setData] = useState(null);
+  
 /*   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null); */
 
@@ -26,7 +29,8 @@ export default function Root(props) {
     return (<div>
       <h1>{Object.values(data['message']).map(item => <li key={item}>{item}</li>)}</h1>
       
-      
+    
+
     </div>)
   }
 
