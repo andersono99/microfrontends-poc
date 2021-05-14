@@ -9,6 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { navigateToUrl } from "single-spa";
+import SearchPage from './SearchPage';
+
 
 const drawerWidth = 240;
 
@@ -39,7 +41,10 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export default function Nav() {
     const classes = useStyles();
+    const [texto, settexto] = useState(null);
     const [selectedItem, setSelectedItem] = useState<string>("none");
+
+    
 
     const handleClick = (url: string): void => {
         setSelectedItem(url.split("/")[1]);
@@ -64,6 +69,7 @@ export default function Nav() {
                     paper: classes.drawerPaper,
                 }}
             >
+            <SearchPage />
                 <Toolbar />
                 <div className={classes.drawerContainer}>
                     <List>

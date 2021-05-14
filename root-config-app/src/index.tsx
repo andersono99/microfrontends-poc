@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { LifeCycles, registerApplication, start } from "single-spa";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
